@@ -1,0 +1,113 @@
+@import url(Reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.login-card{
+    width: 450px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 4rem;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.login-card img {
+    width: 100px;
+}
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer{
+    text-align: center;
+}
+.login-card a {
+     text-decoration: none;
+}
+.login-card a:hover{
+    text-decoration: underline;
+}
+
+.login-card-header{
+    margin-bottom: 2rem;
+
+}
+.login-card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.login-card-form .form-item {
+    position: relative;
+}
+
+.login-card-form .form-item .form-item-icon{
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    color: #747a81;
+}
+.login-card input[type="text"],
+.login-card input[type="password"]{
+    border: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem  ;
+    padding-left: calc(1rem*3.5);
+    border-radius: 100px ;
+    width: 100%;
+}
+.login-card input[type="text"]:focus,
+.login-card input[type="password"]:focus{
+    background: rgba(255, 255, 255, .7);
+}
+
+
+
+.login-card-form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.login-card-form .form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1rem*.8);
+    margin-bottom: .5rem;
+
+}
+.login-card-footer{
+    margin-top: 1.5rem;
+    font-size: calc(1rem*.8);
+
+}
+.login-card-form button{
+    background: linear-gradient(to right, #5b5757, #a59c9c);
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+
+}
+.login-card-form button:hover{
+    background: rgba(0, 0, 0, .85);
+    cursor: pointer;
+}
+.box_main {
+    width: 100%;
+    background-color: blue;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0 30px 10px #f0f0f0;
+    margin-bottom: 20px;
+}
